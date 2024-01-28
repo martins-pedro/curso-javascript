@@ -1,2 +1,1 @@
-document.getElementById("texto").innerHTML =
-  "Meu Primeiro texto feito com <strong>JS</strong>";
+document.getElementById("texto").innerHTML = "Primeira vez utilizando JS";
