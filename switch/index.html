@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {box-sizing: border-box;}
+
+        body {
+            display: flex;
+            height: 99vh;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+        }
+        
+        #texto {
+            padding: 5px;
+            width: 160px;
+        }
+
+        #trocarCor {
+            padding: 10px;
+            font-size: 1.5rem;
+            border: none;
+            border-radius: 20px;
+            border: 2px solid #000;
+        }
+
+        #trocarCor:hover {
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 id="erro"></h1>
+    <input type="text" name="texto" id="texto" placeholder="Digite o nome de uma cor">
+    <button id="trocarCor" onclick="trocarCor()">TROCAR COR</button>
+
+    <script src="switch.js"></script>
+</body>
+</html>
