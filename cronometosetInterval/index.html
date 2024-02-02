@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRONÔMETRO</title>
+    <style>
+        * {margin: 0; padding: 0;}
+        body {
+            background-color: #b0aeae ;
+            height: 96vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .cronometro {
+            background-color: #fff;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+
+        h2 {margin: 20px 0px;}
+
+        button {
+            height: 70px;
+            width: 120px;
+            color: white;
+            border: none;
+        }
+
+        button:hover{cursor: pointer;}
+        button:focus{border: 2px solid black;}
+
+        .start {background-color: rgb(1, 175, 1);}
+
+        .stop {background-color: rgb(212, 37, 37);}
+    </style>
+</head>
+<body>
+    <main class="cronometro">
+        <h1>CRONÔMETRO</h1>
+        <h2 id="tempo">0</h2>
+        <button class="start" onclick="startClock()">START</button>
+        <button class="stop" onclick="stopClock()">STOP</button>
+
+        <script src="crono.js"></script>
+    </main>
+</body>
+</html>
